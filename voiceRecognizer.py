@@ -124,7 +124,7 @@ def main():
         return
 
     print("开始识别音频...")
-    full_text = process_audio_with_progress(file_path)
+    full_text = process_audio_with_progress(convert_to_vosk_wav(file_path))
     print("识别完成！识别结果：")
     print(full_text)
 
